@@ -96,3 +96,44 @@ td {
 	 margin: 0;
 	 padding: 0;
 }
+
+.table1 {
+     width: 100%;
+     border-spacing: 0;
+     border: 2px solid green;
+     margin: 0;
+ }
+
+ .scroll1 {
+     margin: 4px, 4px;
+     padding: 4px;
+     overflow-x: hidden;
+     overflow-x: auto;
+     text-align: justify;
+ }
+
+ .holiheader {
+     background-color: rgb(255, 255, 255);
+     font-size: 53px;
+     text-align: center;
+     color: rgb(228, 13, 13);
+     text-shadow: rgb(20, 8, 8) 1px 1px 1px;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .raw12 {
+     margin: 0;
+     padding: 0;
+     width: 50%;
+     font-size: 53px;
+     text-align: center;
+ }
+
+ .main1 {
+     font-size: 64px;
+     text-align: center;
+     color: orange;
+     text-shadow: black 1px 1px 1px;
+ }
