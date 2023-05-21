@@ -1,269 +1,559 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-        #simple_table {
-            font-family: arial, sans-serif;
-             border-collapse: collapse; 
-             width: 100%;
-            background-color: #ffffff;
-            color:black;
-        }
-        #simple_table td, #simple_table th {
-             text-align: left;
-             padding: 8px;
-             border: 1px solid #808080;
-        }
-        #simple_table tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-        #simple_table tr:hover {
-            background-color: #ffff99;
-        }
-        #simple_table tr > th 
-        {
-            background: #1b90bb;
 
-             color: #ffffff;
-        }
-        </style>
-        
-        <div>
-          <table id="simple_table" >
-            <thead>
-              <tr>
-                <th>English Calendar Date</th>
-                <th>Assamese Calendar Date</th>
-                <th>Day</th>
-                <th>Name of the Festival</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>15th January, 2023</td>
-                <td>30th (পুহ), 1429</td>
-                <td>Sunday</td>
-                <td>Magh Bihu &amp; Tusu Puja</td>
-              </tr>
-              <tr>
-                <td>16th January</td>
-                <td>1st (মাঘ)</td>
-                <td>Monday</td>
-                <td>Magh Bihu &amp; Tusu Puja</td>
-              </tr>
-              <tr>
-                <td>23rd January</td>
-                <td>8th (মাঘ)</td>
-                <td>Monday</td>
-                <td>Netaji’s Birthday</td>
-              </tr>
-              <tr>
-                <td>24th January</td>
-                <td>9th (মাঘ)</td>
-                <td>Tuesday</td>
-                <td>Gwthar Bathou San</td>
-              </tr>
-              <tr>
-                <td>26th January</td>
-                <td>11th মাঘ</td>
-                <td>Thursday</td>
-                <td>Republic Day</td>
-              </tr>
-              <tr>
-                <td>31st January</td>
-                <td>16th মাঘ</td>
-                <td>Tuesday</td>
-                <td>Me-Dam-Me-Phi</td>
-              </tr>
-              <tr>
-                <td>5th February</td>
-                <td>21st মাঘ</td>
-                <td>Sunday</td>
-                <td>Bir Chilaray Divas</td>
-              </tr>
-              <tr>
-                <td>7th March</td>
-                <td>22nd (ফাগুন)</td>
-                <td>Tuesday</td>
-                <td>Dol Jatra</td>
-              </tr>
-              <tr>
-                <td>7th April</td>
-                <td>23rd (চ’ত)</td>
-                <td>Friday</td>
-                <td>Good Friday</td>
-              </tr>
-              <tr>
-                <td>14th April</td>
-                <td>30th (চ’ত), 1429</td>
-                <td>Friday</td>
-                <td>Bohag Bihu</td>
-              </tr>
-              <tr>
-                <td>15th April</td>
-                <td>1st ব’হাগ, 1430</td>
-                <td>Saturday</td>
-                <td>Bohag Bihu</td>
-              </tr>
-              <tr>
-                <td>16th April</td>
-                <td>2nd ব’হাগ</td>
-                <td>Sunday</td>
-                <td>Bohag Bihu</td>
-              </tr>
-              <tr>
-                <td>20th April</td>
-                <td>6th ব’হাগ</td>
-                <td>Thursday</td>
-                <td>Tithi of Damodardeva</td>
-              </tr>
-                
-                
-                
-                
-                
-                
-                      <tr>
-                <td>21st April</td>
-                <td>7th (ব’হাগ)</td>
-                <td>Friday</td>
-                <td>Sati Sadhini Divas</td>
-              </tr>
-              <tr>
-                <td>22nd April</td>
-                <td>8th (ব’হাগ)</td>
-                <td>Saturday</td>
-                <td>Id-U’l-Fitr</td>
-              </tr>
-              <tr>
-                <td>1st May</td>
-                <td>17th (ব’হাগ)</td>
-                <td>Monday</td>
-                <td>May Day</td>
-              </tr>
-              <tr>
-                <td>5th May</td>
-                <td>21st (ব’হাগ)</td>
-                <td>Friday</td>
-                <td>Buddha Purnima</td>
-              </tr>
-              <tr>
-                <td>5th June</td>
-                <td>21st (জেঠ)</td>
-                <td>Monday</td>
-                <td>Janmotsav of Sri Sri Madhabdeva</td>
-              </tr>
-              <tr>
-                <td>29th June</td>
-                <td>13th আহাৰ</td>
-                <td>Thursday</td>
-                <td>Id-U’l-Zuha</td>
-              </tr>
-              <tr>
-                <td>15th August</td>
-                <td>29th (শাওণ)</td>
-                <td>Tuesday</td>
-                <td>Independence Day</td>
-              </tr>
-              <tr>
-                <td>18th August</td>
-                <td>32nd (শাওণ)</td>
-                <td>Friday</td>
-                <td>Tithi of Srimanta Sankardeva</td>
-              </tr>
-              <tr>
-                <td>27th August</td>
-                <td>9th (ভাদ)</td>
-                <td>Sunday</td>
-                <td>Karam Puja</td>
-              </tr>
-              <tr>
-                <td>4th September</td>
-                <td>17th (ভাদ)</td>
-                <td>Monday</td>
-                <td>Tirobhab tithi of Madhabdeva</td>
-              </tr>
-              <tr>
-                <td>6th September</td>
-                <td>19th (ভাদ)</td>
-                <td>Wednesday</td>
-                <td>Janmastomi</td>
-              </tr>
-              <tr>
-                <td>25th September</td>
-                <td>7th (আহিন)</td>
-                <td>Monday</td>
-                <td>Janmotsav of Srimanta Sankardeva</td>
-              </tr>
-              <tr>
-                <td>2nd October</td>
-                <td>14th (আহিন)</td>
-                <td>Monday</td>
-                <td>Birthday of Mahatma Gandhi</td>
-              </tr>
-              <tr>
-                <td>18th October</td>
-                <td>30th (আহিন)</td>
-                <td>Wednesday</td>
-                <td>(কাতি) Bihu</td>
-              </tr>
-            
-        
-              <tr>
-                <td>21st, 22nd, 23rd and 24th October</td>
-                <td>3rd, 4th, 5th and 6th, (কাতি)</td>
-                <td>Saturday, Sunday, Monday and Tuesday</td>
-                <td>Durga Puja &amp; Bijoya Dashomi</td>
-              </tr>
-              <tr>
-                <td>12th November</td>
-                <td>25th, (কাতি)</td>
-                <td>Sunday</td>
-                <td>Kali Puja &amp; Diwali</td>
-              </tr>
-              <tr>
-                <td>15th November</td>
-                <td>28th, (কাতি)</td>
-                <td>Wednesday</td>
-                <td>Bhatri Dwitiya</td>
-              </tr>
-              <tr>
-                <td>19th November</td>
-                <td>2nd (আঘোণ)</td>
-                <td>Sunday</td>
-                <td>Chhat Puja</td>
-              </tr>
-              <tr>
-                <td>24th November</td>
-                <td>7th (আঘোণ)</td>
-                <td>Friday</td>
-                <td>Lachit Divas</td>
-              </tr>
-              <tr>
-                <td>27th November</td>
-                <td>10th (আঘোণ)</td>
-                <td>Monday</td>
-                <td>Guru Nanak’s Birthday</td>
-              </tr>
-              <tr>
-                <td>2nd December</td>
-                <td>15th (আঘোণ)</td>
-                <td>Saturday</td>
-                <td>Asom Divas(Su-Ka-Pha Divas)</td>
-              </tr>
-              <tr>
-                <td>25th December</td>
-                <td>8th (পুহ)</td>
-                <td>Monday</td>
-                <td>Christmas Day</td>
-              </tr>
-        </div>
 
-</body>
+
+
+body {
+	background-color:transparent;
+	text-align:center;
+  margin: auto;
+}
+article {
+	word-wrap: break-word;
+	padding: 2px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-color:Lavender;
+	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
+	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+}
+table {
+   text-align:center;
+   width:100%;
+   border-spacing:0;
+   border:2px solid green;
+   margin: 0;
+}
+td {
+   text-align:center;
+}
+#aa {
+     color:Maroon;
+     background-color:Cyan;
+     text-shadow:MediumSeaGreen 1px 1px 1px;
+     font-size:53px;
+     width:100%;
+     height:481px;
+     margin: 0;
+     padding: 0;
+}
+#ab {
+     color:Maroon;
+     background-color:none;
+     text-align:left;
+     font-size:17px;
+     width:295px;
+     margin-left:5px;
+     padding: 0;
+}
+#ac {
+     color:Maroon;
+     background-color:Cyan;
+     text-shadow:MediumSeaGreen 1px 1px 1px;
+     font-size:17px;
+     width:280px;
+     height:50px;
+     margin: 0;
+     padding: 0;
+}
+#teal {
+     background-color:green;
+}
+#border {
+     border-right:2px solid teal;
+     border-top:2px solid teal;
+     border-left:2px solid teal;
+     border-bottom:2px solid teal;
+}
+#ToDate {
+         color:Red;
+	 font-size:19px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Sig {
+        color:Maroon;
+}
+#Red {
+         color:Red;
+	 font-size:64px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Date {
+         color:Red;
+	 font-size:80px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+
+.table1 {
+     width: 100%;
+     border-spacing: 0;
+     border: 2px solid green;
+     margin: 0;
+ }
+
+ .scroll1 {
+     margin: 4px, 4px;
+     padding: 4px;
+     overflow-x: hidden;
+     overflow-x: auto;
+     text-align: justify;
+ }
+
+ .holiheader {
+     background-color: rgb(255, 255, 255);
+     font-size: 53px;
+     text-align: center;
+     color: rgb(228, 13, 13);
+     text-shadow: rgb(20, 8, 8) 1px 1px 1px;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .raw12 {
+     margin: 0;
+     padding: 0;
+     width: 50%;
+     font-size: 53px;
+     text-align: center;
+ }
+
+ .main1 {
+     font-size: 64px;
+     text-align: center;
+     color: orange;
+     text-shadow: black 1px 1px 1px;
+ }
+
+
+/* header */
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ol{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+}
+header ol a,header a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size:41px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li{
+    font-size:42px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li:hover{
+    background-color: white;
+    color: black;
+}
+.checkBtn{
+    display: none;
+}
+        @media only screen and (max-width: 665px) {
+    .checkBtn{
+      display: block;
+     width: 25px;
+     height: 25px;
+     cursor: pointer;
+     position: relative;
+     appearance: none;
+     -webkit-appearance:  none;
+}
+.checkBtn::before{
+content: '\f0c9';
+font-family: 'Font Awesome 5 Free';
+font-weight: 700;
+font-size: 1.5em;
+color: white;
+}
+.checkBtn:checked::before{
+    content: '\f00d';
+}
+
+      header ol{
+position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    padding: 1.2em;
+    background-color: black;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .4s clip-path;
+}
+.checkBtn:checked ~ ol{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+ header ol a li{
+    margin: 5px 0;
+ }
+ header ol::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: 5px;
+    background-color: grey;
+    top: 98%;
+    left: 0;
+ }
+}
+.logo img{
+    height: 32px;
+    float: left;
+    margin-right: 10px;
+  }
+
+
+
+    </style>
+
+
+    <title>(আজিৰ অসমীয়া তাৰিখ) Assamese Today Date, Month & Years</title>
+  </head>
+  <body>
+    
+    
+    
+    <header>
+      <a href="index.html" class="logo">Calender</a>
+      <input type="checkbox" class="checkBtn" />
+      <ol>
+          <a href="/">
+              <li>PAGES</li>
+          </a>
+          <a href="https://drive.google.com/file/d/1zIpcrO6uy7mgxnMLT6Dmlm-qIl9Lbe0B/preview">
+              <li>PDF</li>
+          </a>
+          <a href="https://assamesecalendar.ibitu.in/holidays.html">
+              <li>HOLIDAYS</li>
+          </a>
+              </ol>
+  </header>
+    
+    
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+      <style>
+          #simple_table {
+              font-family: arial, sans-serif;
+               border-collapse: collapse; 
+               width: 100%;
+              background-color: #ffffff;
+              color:black;
+          }
+          #simple_table td, #simple_table th {
+               text-align: left;
+               padding: 8px;
+               border: 1px solid #808080;
+          }
+          #simple_table tr:nth-child(even) {
+              background-color: #dddddd;
+          }
+          #simple_table tr:hover {
+              background-color: #ffff99;
+          }
+          #simple_table tr > th 
+          {
+              background: #1b90bb;
+  
+               color: #ffffff;
+          }
+          </style>
+          
+          <div>
+            <table id="simple_table" >
+              <thead>
+                <tr>
+                  <th>English Calendar Date</th>
+                  <th>Assamese Calendar Date</th>
+                  <th>Day</th>
+                  <th>Name of the Festival</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>15th January, 2023</td>
+                  <td>30th (পুহ), 1429</td>
+                  <td>Sunday</td>
+                  <td>Magh Bihu &amp; Tusu Puja</td>
+                </tr>
+                <tr>
+                  <td>16th January</td>
+                  <td>1st (মাঘ)</td>
+                  <td>Monday</td>
+                  <td>Magh Bihu &amp; Tusu Puja</td>
+                </tr>
+                <tr>
+                  <td>23rd January</td>
+                  <td>8th (মাঘ)</td>
+                  <td>Monday</td>
+                  <td>Netaji’s Birthday</td>
+                </tr>
+                <tr>
+                  <td>24th January</td>
+                  <td>9th (মাঘ)</td>
+                  <td>Tuesday</td>
+                  <td>Gwthar Bathou San</td>
+                </tr>
+                <tr>
+                  <td>26th January</td>
+                  <td>11th মাঘ</td>
+                  <td>Thursday</td>
+                  <td>Republic Day</td>
+                </tr>
+                <tr>
+                  <td>31st January</td>
+                  <td>16th মাঘ</td>
+                  <td>Tuesday</td>
+                  <td>Me-Dam-Me-Phi</td>
+                </tr>
+                <tr>
+                  <td>5th February</td>
+                  <td>21st মাঘ</td>
+                  <td>Sunday</td>
+                  <td>Bir Chilaray Divas</td>
+                </tr>
+                <tr>
+                  <td>7th March</td>
+                  <td>22nd (ফাগুন)</td>
+                  <td>Tuesday</td>
+                  <td>Dol Jatra</td>
+                </tr>
+                <tr>
+                  <td>7th April</td>
+                  <td>23rd (চ’ত)</td>
+                  <td>Friday</td>
+                  <td>Good Friday</td>
+                </tr>
+                <tr>
+                  <td>14th April</td>
+                  <td>30th (চ’ত), 1429</td>
+                  <td>Friday</td>
+                  <td>Bohag Bihu</td>
+                </tr>
+                <tr>
+                  <td>15th April</td>
+                  <td>1st ব’হাগ, 1430</td>
+                  <td>Saturday</td>
+                  <td>Bohag Bihu</td>
+                </tr>
+                <tr>
+                  <td>16th April</td>
+                  <td>2nd ব’হাগ</td>
+                  <td>Sunday</td>
+                  <td>Bohag Bihu</td>
+                </tr>
+                <tr>
+                  <td>20th April</td>
+                  <td>6th ব’হাগ</td>
+                  <td>Thursday</td>
+                  <td>Tithi of Damodardeva</td>
+                </tr>
+                  
+                  
+                  
+                  
+                  
+                  
+                        <tr>
+                  <td>21st April</td>
+                  <td>7th (ব’হাগ)</td>
+                  <td>Friday</td>
+                  <td>Sati Sadhini Divas</td>
+                </tr>
+                <tr>
+                  <td>22nd April</td>
+                  <td>8th (ব’হাগ)</td>
+                  <td>Saturday</td>
+                  <td>Id-U’l-Fitr</td>
+                </tr>
+                <tr>
+                  <td>1st May</td>
+                  <td>17th (ব’হাগ)</td>
+                  <td>Monday</td>
+                  <td>May Day</td>
+                </tr>
+                <tr>
+                  <td>5th May</td>
+                  <td>21st (ব’হাগ)</td>
+                  <td>Friday</td>
+                  <td>Buddha Purnima</td>
+                </tr>
+                <tr>
+                  <td>5th June</td>
+                  <td>21st (জেঠ)</td>
+                  <td>Monday</td>
+                  <td>Janmotsav of Sri Sri Madhabdeva</td>
+                </tr>
+                <tr>
+                  <td>29th June</td>
+                  <td>13th আহাৰ</td>
+                  <td>Thursday</td>
+                  <td>Id-U’l-Zuha</td>
+                </tr>
+                <tr>
+                  <td>15th August</td>
+                  <td>29th (শাওণ)</td>
+                  <td>Tuesday</td>
+                  <td>Independence Day</td>
+                </tr>
+                <tr>
+                  <td>18th August</td>
+                  <td>32nd (শাওণ)</td>
+                  <td>Friday</td>
+                  <td>Tithi of Srimanta Sankardeva</td>
+                </tr>
+                <tr>
+                  <td>27th August</td>
+                  <td>9th (ভাদ)</td>
+                  <td>Sunday</td>
+                  <td>Karam Puja</td>
+                </tr>
+                <tr>
+                  <td>4th September</td>
+                  <td>17th (ভাদ)</td>
+                  <td>Monday</td>
+                  <td>Tirobhab tithi of Madhabdeva</td>
+                </tr>
+                <tr>
+                  <td>6th September</td>
+                  <td>19th (ভাদ)</td>
+                  <td>Wednesday</td>
+                  <td>Janmastomi</td>
+                </tr>
+                <tr>
+                  <td>25th September</td>
+                  <td>7th (আহিন)</td>
+                  <td>Monday</td>
+                  <td>Janmotsav of Srimanta Sankardeva</td>
+                </tr>
+                <tr>
+                  <td>2nd October</td>
+                  <td>14th (আহিন)</td>
+                  <td>Monday</td>
+                  <td>Birthday of Mahatma Gandhi</td>
+                </tr>
+                <tr>
+                  <td>18th October</td>
+                  <td>30th (আহিন)</td>
+                  <td>Wednesday</td>
+                  <td>(কাতি) Bihu</td>
+                </tr>
+              
+          
+                <tr>
+                  <td>21st, 22nd, 23rd and 24th October</td>
+                  <td>3rd, 4th, 5th and 6th, (কাতি)</td>
+                  <td>Saturday, Sunday, Monday and Tuesday</td>
+                  <td>Durga Puja &amp; Bijoya Dashomi</td>
+                </tr>
+                <tr>
+                  <td>12th November</td>
+                  <td>25th, (কাতি)</td>
+                  <td>Sunday</td>
+                  <td>Kali Puja &amp; Diwali</td>
+                </tr>
+                <tr>
+                  <td>15th November</td>
+                  <td>28th, (কাতি)</td>
+                  <td>Wednesday</td>
+                  <td>Bhatri Dwitiya</td>
+                </tr>
+                <tr>
+                  <td>19th November</td>
+                  <td>2nd (আঘোণ)</td>
+                  <td>Sunday</td>
+                  <td>Chhat Puja</td>
+                </tr>
+                <tr>
+                  <td>24th November</td>
+                  <td>7th (আঘোণ)</td>
+                  <td>Friday</td>
+                  <td>Lachit Divas</td>
+                </tr>
+                <tr>
+                  <td>27th November</td>
+                  <td>10th (আঘোণ)</td>
+                  <td>Monday</td>
+                  <td>Guru Nanak’s Birthday</td>
+                </tr>
+                <tr>
+                  <td>2nd December</td>
+                  <td>15th (আঘোণ)</td>
+                  <td>Saturday</td>
+                  <td>Asom Divas(Su-Ka-Pha Divas)</td>
+                </tr>
+                <tr>
+                  <td>25th December</td>
+                  <td>8th (পুহ)</td>
+                  <td>Monday</td>
+                  <td>Christmas Day</td>
+                </tr>
+          </div>
+  
+  </body>
+  </html>
+    <marquee behavior="scroll" direction="left" scrollamount="3"><a id="ToDate"></a></marquee>
+
+  </br>
+
+
+  
+
+
+    
+  </body>
 </html>
