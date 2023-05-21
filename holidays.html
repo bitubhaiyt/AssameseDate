@@ -5,8 +5,272 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Holidays List of Assamese Calendar</title>
+    <style>
+
+
+
+
+body {
+	background-color:transparent;
+	text-align:center;
+  margin: auto;
+}
+article {
+	word-wrap: break-word;
+	padding: 2px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-color:Lavender;
+	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
+	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+}
+table {
+   text-align:center;
+   width:100%;
+   border-spacing:0;
+   border:2px solid green;
+   margin: 0;
+}
+td {
+   text-align:center;
+}
+#aa {
+     color:Maroon;
+     background-color:Cyan;
+     text-shadow:MediumSeaGreen 1px 1px 1px;
+     font-size:53px;
+     width:100%;
+     height:481px;
+     margin: 0;
+     padding: 0;
+}
+#ab {
+     color:Maroon;
+     background-color:none;
+     text-align:left;
+     font-size:17px;
+     width:295px;
+     margin-left:5px;
+     padding: 0;
+}
+#ac {
+     color:Maroon;
+     background-color:Cyan;
+     text-shadow:MediumSeaGreen 1px 1px 1px;
+     font-size:17px;
+     width:280px;
+     height:50px;
+     margin: 0;
+     padding: 0;
+}
+#teal {
+     background-color:green;
+}
+#border {
+     border-right:2px solid teal;
+     border-top:2px solid teal;
+     border-left:2px solid teal;
+     border-bottom:2px solid teal;
+}
+#ToDate {
+         color:Red;
+	 font-size:19px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Sig {
+        color:Maroon;
+}
+#Red {
+         color:Red;
+	 font-size:64px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Date {
+         color:Red;
+	 font-size:80px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+
+.table1 {
+     width: 100%;
+     border-spacing: 0;
+     border: 2px solid green;
+     margin: 0;
+ }
+
+ .scroll1 {
+     margin: 4px, 4px;
+     padding: 4px;
+     overflow-x: hidden;
+     overflow-x: auto;
+     text-align: justify;
+ }
+
+ .holiheader {
+     background-color: rgb(255, 255, 255);
+     font-size: 53px;
+     text-align: center;
+     color: rgb(228, 13, 13);
+     text-shadow: rgb(20, 8, 8) 1px 1px 1px;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .raw12 {
+     margin: 0;
+     padding: 0;
+     width: 50%;
+     font-size: 53px;
+     text-align: center;
+ }
+
+ .main1 {
+     font-size: 64px;
+     text-align: center;
+     color: orange;
+     text-shadow: black 1px 1px 1px;
+ }
+
+
+/* header */
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ol{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+}
+header ol a,header a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size:41px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li{
+    font-size:42px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li:hover{
+    background-color: white;
+    color: black;
+}
+.checkBtn{
+    display: none;
+}
+        @media only screen and (max-width: 665px) {
+    .checkBtn{
+      display: block;
+     width: 25px;
+     height: 25px;
+     cursor: pointer;
+     position: relative;
+     appearance: none;
+     -webkit-appearance:  none;
+}
+.checkBtn::before{
+content: '\f0c9';
+font-family: 'Font Awesome 5 Free';
+font-weight: 700;
+font-size: 1.5em;
+color: white;
+}
+.checkBtn:checked::before{
+    content: '\f00d';
+}
+
+      header ol{
+position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    padding: 1.2em;
+    background-color: black;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .4s clip-path;
+}
+.checkBtn:checked ~ ol{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+ header ol a li{
+    margin: 5px 0;
+ }
+ header ol::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: 5px;
+    background-color: grey;
+    top: 98%;
+    left: 0;
+ }
+}
+.logo img{
+    height: 32px;
+    float: left;
+    margin-right: 10px;
+  }
+
+
+
+    </style>
 </head>
 <body>
+    
+     <header>
+      <a href="index.html" class="logo">Calender</a>
+      <input type="checkbox" class="checkBtn" />
+      <ol>
+          <a href="/">
+              <li>PAGES</li>
+          </a>
+          <a href="https://drive.google.com/file/d/1zIpcrO6uy7mgxnMLT6Dmlm-qIl9Lbe0B/preview">
+              <li>PDF</li>
+          </a>
+          <a href="https://assamesecalendar.ibitu.in/Holidays.html">
+              <li>HOLIDAYS</li>
+          </a>
+              </ol>
+  </header>
     <style>
         #simple_table {
             font-family: arial, sans-serif;
